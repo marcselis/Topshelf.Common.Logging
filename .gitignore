@@ -7,3 +7,5 @@ packages/*
 */logs/*
 bin/*
 obj/*
+*.nupkg
+*.user
