@@ -34,10 +34,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Topshelf.Common.Logging.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Topshelf.Common.Logging.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
@@ -72,6 +72,7 @@
     <None Include="README" />
     <None Include="Topshelf.Common.Logging.nuspec" />
     <None Include="Topshelf.Common.Logging.pfx" />
+    <None Include="Topshelf.Common.Logging.snk" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
