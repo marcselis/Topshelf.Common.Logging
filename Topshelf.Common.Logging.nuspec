@@ -4,8 +4,8 @@
         <id>Topshelf.Common.Logging.Signed</id>
         <version>4.0.1</version>
         <title>Topshelf.Common.Logging.Signed</title>
-        <authors>thanood</authors>
-        <owners>marcselis</owners>
+        <authors>Marc Selis</authors>
+        <owners>Marc Selis</owners>
         <licenseUrl>https://raw.githubusercontent.com/marcselis/Topshelf.Common.Logging/master/LICENSE.txt</licenseUrl>
         <projectUrl>https://github.com/marcselis/Topshelf.Common.Logging</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
