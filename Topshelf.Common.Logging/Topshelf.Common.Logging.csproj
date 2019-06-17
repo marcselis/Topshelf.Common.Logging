@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Common.Logging library bindings for Topshelf</Description>
+    <RootNamespace>Topshelf.Common.Logging</RootNamespace>
+    <PackageId>Topshelf.Common.Logging</PackageId>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <Authors>Marc Selis</Authors>
+    <Company />
+    <PackageLicenseUrl>https://raw.githubusercontent.com/marcselis/Topshelf.Common.Logging/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/marcselis/Topshelf.Common.Logging</PackageProjectUrl>
+    <PackageReleaseNotes>This version supports .NET Standard</PackageReleaseNotes>
+    <Product>Topshelf.Common.Logging</Product>
+    <PackageTags>topshelf common.logging</PackageTags>
+    <Version>4.0.2</Version>
+    <FileVersion>4.0.2.0</FileVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Topshelf.Common.Logging.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Common.Logging" Version="3.4.1" />
+    <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
+    <PackageReference Include="Topshelf" Version="4.2.0" />
+    <Content Include="readme.txt">
+	  <Pack>true</Pack>
+	  <PackagePath>\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <!-- .NET Standard 2.0 references, compilation flags and build options -->
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;NETCORE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <DocumentationFile>C:\TFS\Git\Topshelf.Common.Logging\Topshelf.Common.Logging\Topshelf.Common.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DefineConstants>TRACE;NETCORE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <DocumentationFile>C:\TFS\Git\Topshelf.Common.Logging\Topshelf.Common.Logging\Topshelf.Common.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <!-- .NET 4.X references, compilation flags and build options -->
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net452|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;NET452;NETFULL</DefineConstants>
+    <DocumentationFile>C:\TFS\Git\Topshelf.Common.Logging\Topshelf.Common.Logging\Topshelf.Common.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net452|AnyCPU'">
+    <DefineConstants>TRACE;NET452;NETFULL</DefineConstants>
+    <DocumentationFile>C:\TFS\Git\Topshelf.Common.Logging\Topshelf.Common.Logging\Topshelf.Common.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
